@@ -1,5 +1,6 @@
 //! String
 
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 extension StringExtension on String {
@@ -101,4 +102,43 @@ extension BuildContextExtension on BuildContext {
 extension WidgetExtension on num {
   SizedBox get sbW => SizedBox(width: toDouble());
   SizedBox get sbH => SizedBox(height: toDouble());
+}
+
+// extension for box decoration
+extension CurvedBorder on BoxDecoration {
+  BoxDecoration curvedRadius({
+    double? borderRadius,
+    Color? color,
+  }) {
+    return BoxDecoration(
+      borderRadius: BorderRadius.circular(borderRadius ?? 12),
+      color: color ?? Colors.black,
+    );
+  }
+}
+
+// extension for textstyles
+extension TextExtension on String {
+  Text txt({
+    Color? color,
+    double? fontSize,
+    height,
+    letterSpacing,
+    FontWeight? fontWeight,
+    int? maxLines,
+    TextOverflow? overflow,
+  }) {
+    return Text(
+      this,
+      maxLines: maxLines,
+      overflow: overflow,
+      style: TextStyle(
+        color: color ?? Colors.black,
+        fontSize: fontSize ?? 16,
+        fontWeight: fontWeight ?? FontWeight.w400,
+        height: height,
+        letterSpacing: letterSpacing,
+      ),
+    );
+  }
 }

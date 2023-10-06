@@ -1,19 +1,14 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:river_state/core/core.dart';
+import 'package:river_state/features/product/data/model/product_model.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   const ProductDetailsScreen({
     Key? key,
-    required this.imageUrl,
-    required this.productTitle,
-    required this.productPrice,
-    required this.productDesc,
+    required this.product,
   }) : super(key: key);
-  final String imageUrl;
-  final String productTitle;
-  final String productPrice;
-  final String productDesc;
+  final Product product;
 
   @override
   Widget build(BuildContext context) {
@@ -23,12 +18,11 @@ class ProductDetailsScreen extends StatelessWidget {
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             32.sbH,
-            
             Container(
               height: MediaQuery.sizeOf(context).height * .3,
               decoration: BoxDecoration(
                   // color: AppColor.background,
-                  image: DecorationImage(image: NetworkImage(imageUrl))),
+                  image: DecorationImage(image: NetworkImage(product.image))),
             ),
             32.sbH,
             Padding(
@@ -37,12 +31,12 @@ class ProductDetailsScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    productTitle,
+                    product.title,
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   12.sbH,
                   Text(
-                    '\$ $productPrice',
+                    '\$ ${product.price}',
                     style: Theme.of(context)
                         .textTheme
                         .labelLarge
@@ -50,7 +44,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
                   16.sbH,
                   Text(
-                    productDesc,
+                    product.description,
                     style: Theme.of(context)
                         .textTheme
                         .labelLarge

@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:river_state/features/users/data/controllers/user_list_provider.dart';
@@ -24,7 +22,7 @@ class _UserListScreenState extends ConsumerState<UserListScreen> {
             onRefresh: () async {
               await ref.read(userListRepository).getUsers();
               ref.invalidate(usersProvider);
-              print('reloading');
+              debugPrint('reloading');
             },
             child: ListView.builder(
               itemCount: data.length,

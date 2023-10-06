@@ -15,6 +15,7 @@ class ProductGridList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      // physics: const NeverScrollableScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 8,
@@ -27,12 +28,7 @@ class ProductGridList extends StatelessWidget {
         final product = data[index];
         return GestureDetector(
           onTap: () => AppRouter.push(
-            ProductDetailsScreen(
-              imageUrl: product.image,
-              productTitle: product.title,
-              productPrice: product.price.toString(),
-              productDesc: product.description,
-            ),
+            ProductDetailsScreen(product: product),
           ),
           child: Container(
               decoration: BoxDecoration(

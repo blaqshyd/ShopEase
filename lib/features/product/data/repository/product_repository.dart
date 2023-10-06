@@ -16,7 +16,7 @@ class ProductRepository {
 
         return product;
       } catch (e) {
-        rethrow;
+        print(e.toString());
       }
     }
     throw ApiError();
