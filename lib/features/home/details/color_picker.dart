@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/common/app_colors.dart';
-import 'package:river_state/core/data.dart';
+import 'package:shop_ease/common/app_colors.dart';
+import 'package:shop_ease/core/data.dart';
 
 class ColorPicker extends StatefulWidget {
   const ColorPicker({

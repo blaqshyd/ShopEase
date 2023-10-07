@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/features/users/data/controllers/user_list_provider.dart';
-import 'package:river_state/features/users/data/repository/user_list_repo.dart';
+import 'package:shop_ease/features/users/data/controllers/user_list_provider.dart';
+import 'package:shop_ease/features/users/data/repository/user_list_repo.dart';
 
 class UserListScreen extends ConsumerStatefulWidget {
   const UserListScreen({super.key});

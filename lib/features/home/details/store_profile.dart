@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/common/common.dart';
+import 'package:shop_ease/common/common.dart';
 
 class StoreProfile extends StatefulWidget {
   const StoreProfile({

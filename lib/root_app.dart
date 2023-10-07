@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:river_state/common/app_colors.dart';
-import 'package:river_state/features/home/home.dart';
-import 'package:river_state/features/product/presentation/product_list_screen.dart';
-import 'package:river_state/features/profile/insta_profile.dart';
-import 'package:river_state/features/users/presentation/user_lists_screen.dart';
+import 'package:shop_ease/common/app_colors.dart';
+import 'package:shop_ease/features/home/home.dart';
+import 'package:shop_ease/features/product/presentation/product_list_screen.dart';
+import 'package:shop_ease/features/profile/insta_profile.dart';
+import 'package:shop_ease/features/users/presentation/user_lists_screen.dart';
 
 class RootApp extends StatefulWidget {
   const RootApp({super.key});

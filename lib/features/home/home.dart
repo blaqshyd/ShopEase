@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/common/common.dart';
-import 'package:river_state/common/loading.dart';
-import 'package:river_state/features/product/data/controllers/product_provider.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/common/loading.dart';
+import 'package:shop_ease/features/product/data/controllers/product_provider.dart';
 
 import '../product/presentation/widgets/custom_field.dart';
 import 'components/app_bar.dart';

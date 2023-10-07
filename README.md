@@ -1,4 +1,4 @@
-# river_state
+# ShopEase
 
 State Mgt Tutorial.
 
@@ -8,6 +8,7 @@ This project is a starting point for a Flutter application solely to understand 
 
 
 ## Packages Used
-- [dio]
-- [riverpod]
+
+- [dio](https://pub.dev/packages/dio)
+- [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
 

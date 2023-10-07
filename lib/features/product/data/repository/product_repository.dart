@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/features/product/data/model/product_model.dart';
+import 'package:shop_ease/features/product/data/model/product_model.dart';
 
 final productRepository = Provider((ref) => ProductRepository());
 

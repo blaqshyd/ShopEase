@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/features/product/data/controllers/product_provider.dart';
+import 'package:shop_ease/features/product/data/controllers/product_provider.dart';
 import 'widgets/product_grid_list.dart';
 
 class ProductListScreen extends ConsumerStatefulWidget {

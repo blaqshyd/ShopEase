@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/common/common.dart';
-import 'package:river_state/core/data.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/core/data.dart';
 
 class Carousel extends StatelessWidget {
   const Carousel({

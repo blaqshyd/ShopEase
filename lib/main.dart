@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/common/app_router.dart';
-import 'package:river_state/root_app.dart';
+import 'package:shop_ease/common/app_router.dart';
+import 'package:shop_ease/root_app.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));

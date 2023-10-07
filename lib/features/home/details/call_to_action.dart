@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/features/product/presentation/widgets/button.dart';
+import 'package:shop_ease/features/product/presentation/widgets/button.dart';
 
 class CallToAction extends StatelessWidget {
   const CallToAction({

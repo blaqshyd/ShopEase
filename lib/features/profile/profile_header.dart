@@ -1,7 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
 import 'package:flutter/material.dart';
-import 'package:river_state/common/common.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/core/image_picker_util.dart';
 
 class ProfileHeader extends StatelessWidget {
   const ProfileHeader({
@@ -19,8 +20,11 @@ class ProfileHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const CircleAvatar(
-                radius: 40,
+              GestureDetector(
+                onTap: () => ImagePickerHelper.pickImages(),
+                child: const CircleAvatar(
+                  radius: 40,
+                ),
               ),
               RichText(
                   textAlign: TextAlign.center,

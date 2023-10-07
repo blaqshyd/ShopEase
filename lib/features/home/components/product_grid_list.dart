@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconly/iconly.dart';
 
-import 'package:river_state/common/common.dart';
-import 'package:river_state/core/core.dart';
-import 'package:river_state/features/home/details/details.dart';
-import 'package:river_state/features/product/data/model/product_model.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/core/core.dart';
+import 'package:shop_ease/features/home/details/details.dart';
+import 'package:shop_ease/features/product/data/model/product_model.dart';
 
 class ProductGridList extends StatelessWidget {
   const ProductGridList({

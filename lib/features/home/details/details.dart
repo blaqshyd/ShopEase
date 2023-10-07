@@ -2,9 +2,9 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:river_state/common/common.dart';
+import 'package:shop_ease/common/common.dart';
 
-import 'package:river_state/features/product/data/model/product_model.dart';
+import 'package:shop_ease/features/product/data/model/product_model.dart';
 
 import 'body.dart';
 

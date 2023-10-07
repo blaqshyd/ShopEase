@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:river_state/common/common.dart';
+import 'package:shop_ease/common/common.dart';
 
 class Loading extends StatelessWidget {
   const Loading({super.key});

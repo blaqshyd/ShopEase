@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/features/users/data/model/user_model.dart';
+import 'package:shop_ease/features/users/data/model/user_model.dart';
 
 final userListRepository = Provider((ref) => UserListRepo());
 

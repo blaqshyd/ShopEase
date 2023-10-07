@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:river_state/common/common.dart';
-import 'package:river_state/core/core.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/core/core.dart';
 
 ///* Different types of Provider
 ///? Provider - only allows for ref.read() and ref.watch()

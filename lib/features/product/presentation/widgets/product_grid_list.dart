@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:river_state/common/common.dart';
-import 'package:river_state/core/core.dart';
-import 'package:river_state/features/product/data/model/product_model.dart';
-import 'package:river_state/features/product/presentation/product_details_screen.dart';
+import 'package:shop_ease/common/common.dart';
+import 'package:shop_ease/core/core.dart';
+import 'package:shop_ease/features/product/data/model/product_model.dart';
+import 'package:shop_ease/features/product/presentation/product_details_screen.dart';
 
 class ProductGridList extends StatelessWidget {
   const ProductGridList({
