@@ -1,7 +1,8 @@
-//! String
-
+import 'dart:io';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
+//! String
 
 extension StringExtension on String {
   String get capitalize {
@@ -24,6 +25,10 @@ extension StringExtension on String {
     }
 
     return initials;
+  }
+
+  String get initial {
+    return this[0].toUpperCase();
   }
 
   String get emailPrefix {
@@ -78,18 +83,18 @@ extension DateUtil on DateTime {
 }
 
 //! File Picker
-// extension FilePickerExtension on FilePickerResult {
-//   // Extension method to get the picked file as a platform-specific File
-//   Future<File?> get asFile async {
-//     if (files.isNotEmpty) {
-//       final filePath = files.single.path;
-//       if (filePath != null) {
-//         return File(filePath);
-//       }
-//     }
-//     return null;
-//   }
-// }
+extension FilePickerExtension on FilePickerResult {
+  // Extension method to get the picked file as a platform-specific File
+  Future<File?> get asFile async {
+    if (files.isNotEmpty) {
+      final filePath = files.single.path;
+      if (filePath != null) {
+        return File(filePath);
+      }
+    }
+    return null;
+  }
+}
 
 //* Media Query
 //? Not sure how this is applied yet. Check gabby's github for impl
@@ -102,6 +107,10 @@ extension BuildContextExtension on BuildContext {
 extension WidgetExtension on num {
   SizedBox get sbW => SizedBox(width: toDouble());
   SizedBox get sbH => SizedBox(height: toDouble());
+
+  EdgeInsetsGeometry get padA => EdgeInsets.all(toDouble());
+  EdgeInsetsGeometry get padV => EdgeInsets.symmetric(vertical: toDouble());
+  EdgeInsetsGeometry get padH => EdgeInsets.symmetric(horizontal: toDouble());
 }
 
 // extension for box decoration

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shop_ease/common/app_colors.dart';
-import 'package:shop_ease/features/home/home.dart';
-import 'package:shop_ease/features/product/presentation/product_list_screen.dart';
-import 'package:shop_ease/features/profile/insta_profile.dart';
+import 'package:shop_ease/features/home/views/home.dart';
+import 'package:shop_ease/features/profile/profile_screen.dart';
 import 'package:shop_ease/features/users/presentation/user_lists_screen.dart';
+import 'package:shop_ease/features/wishlist/wishlist_screen.dart';
 
 class RootApp extends StatefulWidget {
   const RootApp({super.key});
@@ -41,9 +41,9 @@ List<BottomNavigationBarItem> items = [
 
 final List<Widget> _pages = [
   const Home(),
-  const ProductListScreen(),
+  const WishlistScreen(),
   const UserListScreen(),
-  const InstaProfile()
+  const ProfileScreen()
 ];
 
 class _RootAppState extends State<RootApp> {
